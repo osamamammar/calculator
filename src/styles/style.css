@@ -1,0 +1,153 @@
+.calc-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 92vh;
+}
+
+.calc__screen {
+	padding: 1rem;
+	border: 2px solid var(--border-color);
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+	background-color: var(--display-background);
+	width: 350px;
+	text-align: right;
+	overflow-wrap: break-word;
+	&--last {
+		min-height: 32px;
+		font-size: 20px;
+	}
+	&--current {
+		min-height: 64px;
+		font-size: 40px;
+	}
+}
+
+.btns-container {
+	background-color: var(--display-background);
+	display: grid;
+	gap: 0.5rem;
+	grid-template-areas:
+		'clear divide multiply backspace'
+		'seven eight nine minus'
+		'four five six plus'
+		'one two three equal'
+		'percent zero dot equal';
+	height: 425px;
+	width: 350px;
+}
+
+.clear {
+	grid-area: clear;
+}
+.divide {
+	grid-area: divide;
+}
+.multiply {
+	grid-area: multiply;
+}
+.backspace {
+	grid-area: backspace;
+}
+.seven {
+	grid-area: seven;
+}
+.eight {
+	grid-area: eight;
+}
+.nine {
+	grid-area: nine;
+}
+.minus {
+	grid-area: minus;
+}
+.four {
+	grid-area: four;
+}
+.five {
+	grid-area: five;
+}
+.six {
+	grid-area: six;
+}
+.plus {
+	grid-area: plus;
+}
+.one {
+	grid-area: one;
+}
+.two {
+	grid-area: two;
+}
+.three {
+	grid-area: three;
+}
+.equal {
+	grid-area: equal;
+}
+.percent {
+	grid-area: percent;
+}
+.zero {
+	grid-area: zero;
+}
+.dot {
+	grid-area: dot;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	display: grid;
+	place-items: center;
+	background-color: transparent;
+	border: none;
+	color: var(--white);
+	font-size: 1.5rem;
+	font-family: inherit;
+}
+
+.controller,
+.operator {
+	background-color: rgba(66, 66, 146, 0.185);
+	color: var(--operator);
+	transition: all 0.1s ease-in-out;
+	&:hover {
+		background-color: rgba(66, 66, 146, 0.3);
+		color: var(--operator);
+	}
+}
+
+.number,
+.other {
+	background-color: rgba(255, 255, 255, 0.03);
+	transition: all 0.1s ease-in-out;
+	&:hover {
+		background-color: var(--btn-number-other-hover);
+	}
+}
+
+.equal {
+	background-color: rgb(90, 90, 212);
+	color: var(--white);
+	transition: all 0.1s ease-in-out;
+	&:hover {
+		background-color: var(--equal-btn);
+		color: var(--white);
+	}
+}
+
+.footer__author {
+	text-align: center;
+	&--link {
+		color: var(--white);
+		font-size: 14px;
+		transition: color 0.2s ease-in-out;
+		&:hover {
+			color: var(--footer-hover);
+		}
+	}
+}

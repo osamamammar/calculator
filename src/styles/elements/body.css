@@ -1,4 +1,9 @@
 body {
 	margin: 0;
 	padding: 0;
+	color: #fff;
+	background-color: #091122;
+	font-weight: normal;
+	font-family: 'Righteous', cursive;
+	font-size: 1.5rem;
 }

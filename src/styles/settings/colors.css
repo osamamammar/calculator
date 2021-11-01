@@ -1,3 +1,12 @@
 :root {
-	--primary-color: #000;
+	--background-color: #091122;
+	--border-color: rgb(63, 63, 151);
+	--display-background: rgba(255, 255, 255, 0.02);
+	--btn-operator-background: #1b2045;
+	--operator: #6868e0;
+	--number-background: rgba(255, 255, 255, 0.05);
+	--equal-btn: #5a5ae9;
+	--btn-number-other-hover: rgba(255, 255, 255, 0.08);
+	--footer-hover: rgb(104, 104, 224);
+	--white: #fff;
 }
