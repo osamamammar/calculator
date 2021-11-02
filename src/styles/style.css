@@ -35,7 +35,6 @@
 		'four five six plus'
 		'one two three equal'
 		'percent zero dot equal';
-	height: 425px;
 	width: 350px;
 }
 
@@ -150,4 +149,8 @@
 			color: var(--footer-hover);
 		}
 	}
+}
+
+.no-hover {
+	pointer-events: none;
 }
