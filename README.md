@@ -7,13 +7,13 @@ JS practice project from (The Odin Project). calculator
 <p align="center">
    Desktop
    <br></br>
-  <img width="600" src="">
+  <img width="600" src="https://raw.githubusercontent.com/osamamammar/calculator/main/src/images/desktop.png">
 </p>
 
 <p align="center">
    Mobile
    <br></br>
-  <img src="">
+  <img src="https://raw.githubusercontent.com/osamamammar/calculator/main/src/images/mobile.png">
 </p>
 
 ## Getting started
