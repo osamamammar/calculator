@@ -11,6 +11,7 @@ let readyToOperate = true;
 const numberButtons = document.querySelectorAll('.number');
 const operatorButtons = document.querySelectorAll('.operator');
 const otherButtons = document.querySelectorAll('.other');
+const allButtons = document.querySelectorAll('.btn');
 // single btn
 const equalButton = document.querySelector('.equal');
 const clearButton = document.querySelector('.clear');
@@ -37,6 +38,17 @@ numberButtons.forEach((button) =>
 operatorButtons.forEach((button) =>
 	button.addEventListener('click', () => setOperation(button.textContent))
 );
+
+allButtons.forEach((button) => {
+	button.addEventListener('keydown', removeEnterForAllButtons);
+});
+
+// function to disable enter key for all buttons
+function removeEnterForAllButtons(e) {
+	if (e.keyCode === 13 || e.key === '=' || e.key === 'Enter') {
+		e.preventDefault();
+	}
+}
 
 // function to append numbers
 function appendNumber(number) {
